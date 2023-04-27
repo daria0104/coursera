@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0; }
+  
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  
+  :focus, :active {
+    outline: none; }
+  
+  a:focus, a:active {
+    outline: none; }
+  
+  nav, footer, header, aside {
+    display: block; }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; }
+  
+  input, button, textarea {
+    font-family: inherit; }
+  
+  input::-ms-clear {
+    display: none; }
+  
+  button {
+    cursor: pointer; }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+  
+  a, a:visited {
+    text-decoration: none; }
+  
+  a:hover {
+    text-decoration: none; }
+  
+  ul li {
+    list-style: none; }
+  
+  img {
+    vertical-align: top; }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit; }
+  
+  /*-----------------*/
+
+  .container{
+    margin: 0 auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  h1{
+    font-size: 28px;
+    text-align: center;
+    margin: 25px 0px;
+    
+  }
+
+  .block{
+    width: 33.333%;
+    float:left;
+  }
+
+  .item{
+    border: 3px solid black;
+    background: rgb(164, 164, 164);
+    margin: 10px;
+  }
+
+  p{
+    margin: 20px 0 0 0;
+    padding: 10px;
+  }
+ 
+  .title{
+    font-size: 20px;
+    float: right;
+    padding: 3px 0;
+    text-align: center;
+    width: 33.33%;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+  }
+
+  .chicken .title{
+    background: rgb(222, 159, 159);
+  }
+  .beef .title{
+    background-color: rgb(137, 52, 52);
+  }
+  .sushi .title{
+    background-color: rgb(227, 199, 121);
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .block_tablet{
+      width: 50%;
+      float:left;
+      
+    }
+    .sushi
+    {
+      width: 100%;
+    }
+    .sushi .title{
+      width: 16%;
+    }
+  }
+  @media (max-width: 767px) {
+    .block_phone{
+      width: 100%;
+    }
+    h1{
+      margin: 20px 0;
+    }
+  }
