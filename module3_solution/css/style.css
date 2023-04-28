@@ -1,0 +1,102 @@
+*{
+  font-family: cursive;
+  color: black;
+}
+
+.navbar-default
+{
+  border: none;
+}
+
+.navbar-collapse{
+  border: none;
+}
+
+.navbar {
+  background-color:  rgb(164, 164, 164);
+  border-radius: 0;
+  border-bottom: 2px solid black;
+}
+
+.navbar-header {
+  margin: 10px;
+}
+
+.navbar-brand h1{
+  color: black;
+  font-size: 27px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-default .navbar-toggle, .icon-bar {
+  border: 2px solid rgb(37, 37, 37);
+}
+
+.button:hover, .button:focus {
+  background-color:rgb(210, 209, 209);
+}
+
+#nav-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#nav-list li{
+  border-top: 2px solid black;
+}
+
+#nav-list a {
+  text-align: center;
+  color: black;
+}
+
+.main-title{
+  text-align: center;
+  margin: 10px 0 15px;
+}
+
+.item{
+  background: rgb(164, 164, 164);
+}
+
+.item p{
+  padding: 5px 15px 15px;
+  margin: 0;
+}
+ 
+  .title{
+    font-size: 20px;
+    padding: 3px 0;
+    text-align: center;
+  }
+
+.block{
+  padding: 10px;
+}
+  @media (min-width: 768px) and (max-width: 991px) {
+    .main-title{
+      font-size: 26px;
+    }
+    .navbar-brand h1{
+      font-size: 24px;
+      font-weight: 550;
+    }
+  }
+  @media (max-width: 767px) {
+    .block{
+      padding: 10px 30px;
+    }
+    .main-title{
+      font-size: 24px;
+    }
+    .navbar-brand h1{
+      font-size: 22px;
+      font-weight: 500;
+    }
+  }
+
