@@ -1,14 +1,20 @@
+document.addEventListener("DOMContentLoaded",
+function(){
+    document.querySelector("button")
+    .addEventListener("click", function(){
+        var self = this;
+        var name = "";
 
-function makeMultiplier(multiplier){
-    return (
-        function(x) {
-            return multiplier * x;
-        }
-    );
-}
+        $ajaxUtils
+        .sendGetRequest("text.json",
+        function(res){
+            var message = res.name + " " + res.surname + " ";
+            message += res.year;
 
-let f = makeMultiplier(2);
-console.log(f(4));
+            document.querySelector("#content")
+            .innerHTML = "<h2>Hello " + message + "</h2>";
+        });
 
-console.log(makeMultiplier(2));
-console.log(makeMultiplier(2)(2));
+        
+    });
+});
